@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+imagehash = "==4.3.1"
+pillow = "==10.1.0"
+structlog = "==22.3.0"
+opencv-python = "==4.8.1.78"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
