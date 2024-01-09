@@ -39,7 +39,7 @@ def get_video_frame_rate(path: str) -> float:
     if cmd.stdout is None:
         raise Exception("Process did not have a StdOut buffer.")
     nums = cmd.stdout.read().decode("utf-8").split("/")
-    return int(nums[0]) / int(nums[1])
+    return int(nums[0]) / int(nums[1].rstrip("x\r\n"))
 
 
 def get_video_length(path: str) -> float:
