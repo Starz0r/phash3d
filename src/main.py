@@ -118,11 +118,8 @@ def main(argv: argparse.Namespace) -> int:
         hashes.append(phash.__str__())
         current_length += 1 / steps
 
-    fingerprint = ""
     for hash in hashes:
-    fingerprint += hash.upper()
-
-    print(fingerprint)
+        print(hash.upper(), end="", flush=True)
 
     return 0
 
